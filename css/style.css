@@ -1,0 +1,554 @@
+
+/* --------- PALETA DE COLORES ----------- */
+/*
+#F6D58E - Miel / dorado suave
+#5B8C5A - Verde oliva natural
+#D9798A - Naranja rojizo
+#3C3C3C - Gris oscuro
+*/
+
+/* --------- RESETEO ----------- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #3C3C3C;
+  background-color: #fff;
+}
+
+/*HEADER ============================================================ */
+
+/*HEADER GENERAL ======================================================== */
+.navbar {
+  background-color: #5B8C5A !important; /* Verde Tierra Viva */
+  min-height: 80px;                     /* Altura fija */
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Logo */
+.navbar-brand img {
+  max-height: 60px;
+  height: a60px;
+}
+
+/* Links */
+.navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 600;
+  margin-left: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #EAEAEA !important;
+}
+
+
+/* Header base (mismo color y altura en todas las páginas) */
+header {
+  background-color: #5B8C5A;  /* verde oliva */
+  padding: 10px 30px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  color: #5B8C5A
+}
+
+/* Header SIN logo (index.html) */
+.header-sin-logo nav {
+  margin-left: auto;   /* empuja menú hacia la derecha */
+}
+
+.header-sin-logo ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;           /* espacio entre enlaces */
+}
+
+.header-sin-logo a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header-sin-logo a:hover {
+  text-decoration: underline;
+}
+
+/* Header CON logo (dulce, salado, contacto) */
+.header-con-logo {
+  justify-content: space-between; /* logo a la izq. y nav a la der. */
+}
+
+.header-con-logo img {
+  height: 90px;  /* tamaño del logo */
+  width: auto;
+}
+
+.header-con-logo ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;     /* espacio entre enlaces */
+}
+
+.header-con-logo a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header-con-logo a:hover {
+  text-decoration: underline;
+}
+/*=================================================FIN HEADER*/
+
+/* MAIN =================================================== */
+/* ====== BANNER ====== */
+
+
+/*.banner img {
+  width: 100%;         /* la imagen ocupa todo el ancho 
+  height: 100%;        /* la imagen ocupa todo el alto 
+  object-fit: cover;   /* recorta sin deformar 
+  display: block;      /* evita espacios raros 
+}*/
+
+
+.banner-principal {
+  position: relative;                /* posicion: relativa*/
+  width: 100%;                       /* ancho : 100%*/
+  height: 155px;                     /* Altura: 155px*/
+  margin: 0;                         /* márgenes: 0 */
+  padding: 0;                        /* rellenos: 0 */
+  overflow: hidden;                  /* desborbamiento: oculto*/
+  background-size: cover;            /* tamaño del fondo: portada*/
+  background-position: center;       /* posiciom del fondo: centro*/
+  display: flex;                     /* mostrar: flex */
+  align-items: first baseline;       /* alinear-elementos: primera linea de base*/ */
+}
+
+.texto-banner {
+  display: flex;                                    /* pantalla: flex*/
+  flex-direction: column;                           /* direection de flex: columna*/
+  justify-content: center;                          /* justificar-contenido: centro*/
+  align-items: flex-start;                          /* alinear-elementos: inicio-flexible*/
+  padding-left: 120px;                              /* relleno izquiterdo Separación desde la izquierda : 120px*/
+  height: 100%;                                     /* altura: 100*/
+  color: rgb(36, 32, 32);                         /* color: rlb*/
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);    /* sombra*/
+  font-family: 'Georgia', serif;                    /* fuente: Georgia*/
+  text-align: left;                                 /* aliniacion del texto: izq*/
+  max-width: 600px;                                 /* ancho maximo: 600px*/
+}
+
+
+
+
+/*.banner {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin: 0;
+  padding: 0;            /* altura del banner 
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;                             
+  object-fit: cover;
+  display: block;
+}-->
+
+
+/*.banner h1 {
+  position: absolute;
+  top: 50%; 
+  left: 40px;                pegad/* solo centra vertical 
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  text-shadow: 0 4px 8px rgba(0,0,0,0.6);
+  margin: 0;
+  text-align: left;         /* por si el texto es largo 
+}
+
+
+.banner-contacto {
+  position: relative;
+  width: 100%;
+  height: 200px;              /* más bajo, no gigante 
+  overflow: hidden;
+}
+
+.banner-contacto img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;          /* adapta la foto 
+  display: block;
+}*/
+
+/*TEXTO DEL BANNER==============================================*/
+./*texto-banner {
+  position: absolute;
+  top: 50%;                   /* centrado vertical 
+  left: 40px;                 /* alineado a la izquierda 
+  transform: translateY(-50%); /* solo centra vertical 
+  color: white;
+  text-align: left;
+  max-width: 50%;             /* para que no ocupe toda la pantalla 
+  font-family: 'Lato', sans-serif;
+}
+
+/* H1 principal 
+.texto-banner h1 {
+  font-size: 3rem;
+  font-weight: 900;           /* bien negrita 
+  margin: 0 0 10px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.8); /* sombra/relieve 
+  letter-spacing: 2px;        /* espaciado elegante 
+}
+
+/* H2 subtítulo 
+.texto-banner h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 15px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+/* Párrafo 
+.texto-banner p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+/*=============================================FIN TEXTI DEL BANNER*/
+
+
+
+
+
+/* ====== GRID CONTACTO ====== */
+.contacto-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;   /* dos columnas */
+  gap: 20px;
+  padding: 20px;
+}
+
+.mapa iframe {
+  width: 500px;
+  height:500px;
+  border: none;
+  border-radius: 8px;
+}
+
+.banner-contacto h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.5);
+}*/
+/*==========================================================================FIN BANNER*/
+
+/*CONTENIDO ======================================================================== */
+.intro { padding: 40px; text-align: center; }
+.intro h2 { color: #5B8C5A; margin-bottom: 15px; }
+.intro p { font-size: 1.2rem; line-height: 1.5; }
+
+/* ================== GRID INICIO =================== */
+.contenedor1-grid {
+  display: grid;
+  grid-template-areas:
+    "titulo1  titulo1"
+    "logo     titulo2"
+    "logo     titulo3"
+    "logo     titulo4"
+    "logo     titulo5"
+    "logo     titulo6"
+    "logo     titulo7";
+  grid-template-columns: 750px 1fr;   /* col izq: logo, col der: textos */
+  gap: 15px 25px;
+  align-items: start;
+  margin: 20px;
+}
+
+/* Áreas */
+.titulo1 { grid-area: titulo1; text-align: center; }
+.titulo2 { grid-area: titulo2; text-align: center;}
+.titulo3 { grid-area: titulo3; }
+.titulo4 { grid-area: titulo4; }
+.titulo5 { grid-area: titulo5; }
+.titulo6 { grid-area: titulo6; }
+.titulo7 { grid-area: titulo7; text-align: center;}
+
+/* Logo ajustado */
+.logo-banner {
+  grid-area: logo;
+  width: 750px;   /* ajustá a gusto */
+  height: auto;
+  justify-self: center;
+  align-self: start;
+}
+
+/* Texto general */
+.contenedor1-grid p {
+  margin: 0;
+  line-height: 1.5;
+}
+/*=================================FIN GRIS INICIO===*/
+
+/*GRID CONTACTO=================================*/
+.contacto-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;   /* dos columnas iguales */
+  grid-template-rows: auto auto auto auto; /* 4 filas */
+  gap: 20px;
+  padding: 20px;
+  align-items: start;
+}
+
+/* Asignación de áreas */
+.titulo-contacto { grid-column: 1; grid-row: 1; }
+.titulo-ubicacion { grid-column: 2; grid-row: 1; }
+
+.formulario { grid-column: 1; grid-row: 2; }
+.mapa { grid-column: 2; grid-row: 2; text-align: center; }
+
+.info-extra { grid-column: 1; grid-row: 3; }
+.horarios { grid-column: 2; grid-row: 3; }
+
+.red-extra { grid-column: 1; grid-row: 4; }
+.agradecimiento { grid-column: 2; grid-row: 4; }
+
+/* Estilo del formulario ===============*/
+.formulario label{
+  display: block;
+  margin-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+.formulario input,
+.formulario textarea{
+  width: 100%;              /* ocupa todo el ancho disponible */
+  padding: 12px;            /* cajita más grande */
+  margin-bottom: 15px;      /* espacio entre cajas */
+  border: 1px solid #ccc;   /* borde gris clarito */
+  border-radius: 5px;       /* puntas redondeadas */
+  font-size: 1rem;          /* texto más grande y legible */
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;   /* evita que se rompa el ancho */
+}
+
+.formulario textarea {
+  resize: vertical;         /* solo permite agrandar verticalmente */
+  min-height: 120px;        /* caja más alta para mensaje */
+}
+
+.formulario button {
+  background-color: #5B8C5A;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formulario button:hover {
+  background-color: #3C3C3C;
+}
+/*==========================FIN ESTILO DEL FORMULARIO*/ ario
+
+/* Estilo del mapa */
+.mapa img {
+  max-width: 100%;
+  height: auto;
+}
+/*=================================FIN GRIS CONTANTO*/
+
+/* --------- GALERÍA ----------- 
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+.producto {
+  background-color: #fff;
+  border: 2px solid #F6D58E;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.producto img { width: 100%; height: auto; border-radius: 5px; }
+.producto h3 { margin: 10px 0; color: #D9798A; }
+.producto p { font-size: 0.9rem; }
+.producto:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+
+/* --------- FORMULARIO ----------- */
+.formulario {
+  max-width: 600px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.formulario label { font-weight: bold; }
+.formulario input, .formulario textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.formulario button {
+  background-color: #5B8C5A;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.formulario button:hover { background-color: #3C3C3C; }
+/*==================================================================MAIN*/
+
+
+
+/* FOOTER ====================================================================*/
+footer {
+  background-color: #5B8C5A;        /* mismo color que el header */
+  padding: 10px 30px;                 /* relleno */
+  height: 88px;                       /* altura */
+  display: flex;                      /* flexbox */
+  justify-content: space-between;     /* logo a la izquierda, redes a la derecha */
+  align-items: center;                /* centrado vertical */
+  color: #fff;                      /* texto blanco */
+}
+
+/* Logo pequeño en el pie             */
+footer .logo-pie {
+  height: 100px;                      /* ajustá a gusto: 20px, 25px, 30px */
+  width: auto;                        /* mantiene proporción */
+}
+/* Contenedor "Seguinos en" + redes  */
+footer .seguinos {
+  display: flex;
+  align-items: center;
+  gap: 25px;   }                      /* espacio entre texto e iconos */
+  margin-left: auto;                  /* empuja todo a la derecha */
+  margin-right: 40px;                 /*deja aire con el borde derecho*/
+}*/
+
+/* Texto Seguinos */
+footer .seguinos p {
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Íconos de redes sociales      */
+footer .redes img {
+  height: 50px;                  /* tamaño de los iconos */
+  width: auto;                   /*ancho*/
+  margin: 0 5px;                 /*margen*/
+  vertical-align: middle;        /*alineacion vertical*/
+  transition: transform 0.3s;    /*transicion*/
+}
+
+/*Boton flotante de WhatsApp*/
+/*.btn-whatsapp {
+  position: fixed;      
+  bottom: 30px;         
+  right: 20px;          
+  z-index: 1000;      
+}*/
+
+/*.btn-whatsapp img {
+  height: 50px;         
+  width: auto;
+  border-radius: 50%;   
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}*/
+
+.btn-whatsapp img:hover {
+  transform: scale(1.1); /* se agranda un poco al pasar el mouse */
+}
+/* Posiciones verticales (más arriba para no pisar el footer) 
+.btn-whatsapp { bottom: 120px; }   antes estaba en 20px */
+
+footer .redes img:hover {
+  transform: scale(1.2); /* efecto agrandar al pasar el mouse */
+}
+/*===========================================================FIN FOOTER*/
+
+/*RESPONSIVE ==========================================================*/
+/*para Moviles hasta 480px*/
+@media screen and (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+    width: 150px;
+  }
+
+  main {
+    padding: 10px;
+  }
+}
+
+/* Para tablets (978px) */
+@media screen and (min-width: 978px) and (max-width: 1024px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .logo {
+    width: 180px;
+  }
+
+  main {
+    padding: 15px 30px;
+  }
+}
+
+/* Para laptops y escritorio (desde 1025px) */
+@media screen and (min-width: 979px) {
+  header {
+    padding: 20px 40px;
+  }
+
+  nav ul {
+    gap: 25px;
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  main {
+    padding: 40px;
+  }
+}
+/*=======================================================FIN RESPONSIVE*/
