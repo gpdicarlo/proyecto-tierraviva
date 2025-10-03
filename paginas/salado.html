@@ -51,61 +51,84 @@
        </div>
      </section>
 
-    <!-- CARDS DE SALADOS -->
-      <section class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
-            <img src="../imagenes/escabeche-Berenjenas.png" class="card-img-top" alt="Escabeche de Berenjenas">
-            <div class="card-body">
-              <h5 class="card-title">Escabeche de Berenjenas</h5>
-              <p class="card-text">Tradicional, con especias y aceite de oliva.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="../imagenes/pepinos-en-vinagre.png" class="card-img-top" alt="Pepinos en Vinagre">
-            <div class="card-body">
-              <h5 class="card-title">Pepinos en Vinagre</h5>
-              <p class="card-text">Crujientes, ideales para picadas</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="../imagenes/salsa-de-Tomates.png" class="card-img-top" alt="Salsa de salsa-de-Tomates">
-            <div class="card-body">
-              <h5 class="card-title">Salsa de Tomate</h5>
-              <p class="card-text">De la mejor huerta</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    
+    <!-- CARRUSEL LINEA  -->
+  <section id="carouselExampleCaptions" class="carousel slide">
+  <!-- Indicadores -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
 
-    <!-- CARRUSEL DE SALADOS -->
-        <section id="carruselSalados" class="carousel slide mb-5" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="../imagenes/escabeche-Berenjenas.png" class="d-block w-100" alt="Escabeche de Berenjenas">
-            </div>
-            <div class="carousel-item">
-              <img src="../imagenes/escabeche-Pollo.png" class="d-block w-100" alt="Escabeche de Pollo">
-            </div>
-            <div class="carousel-item">
-              <img src="../imagenes/pepinos-en-vinagre.png" class="d-block w-100" alt="Pepinos en Vinagre">
-            </div>
-          </div>
-          <!-- Controles -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#carruselSalados" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carruselSalados" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </button>
-        </section>
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <img src="../imagenes/escabeche-Berenjenas.png" class="d-block frasco" alt="Escabeches de Berenjenas">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Escabeches de Berenjenas</h5>
+        <p>Intenso con especias seleccionadas</p>
+        <p>$$$$$$$</p>
+      </div>
+    </div>
 
-  <!-- FOOTER -->
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <img src="../imagenes/escabeche-Pollo.png" class="d-block frasco" alt="Escabeches de Pollo">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Escabeches de Pollo</h5>
+        <p>Receta lista para compartir</p>
+        <p>$$$$$$</p>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <img src="../imagenes/pepinos-en-vinagre.png" class="d-block frasco" alt="Pepinos en Vinagre">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Pepinos en Vinagre</h5>
+        <p>Sabor casero, textura crujiente</p>
+        <p>$$$$$$</p>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="carousel-item">
+      <img src="../imagenes/salsa-de-Tomates.png" class="d-block frasco" alt="Salsa de Tomate">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Salsa de Tomate</h5>
+        <p>Con tomates frescos de la huerta</p>
+        <p>$$$$$$$$</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controles -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+</section>
+
+
+  <!-- Controles -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+</section=>
+
+
+   <!-- FOOTER -->
   <footer>
     <!-- Logo Tierra Viva a la izquierda -->
     <img class="logo-pie" src="../imagenes/logo-TierraViva-pie.png" alt="Logo Tierra Viva">
