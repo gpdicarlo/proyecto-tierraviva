@@ -44,7 +44,6 @@ body {
   color: #EAEAEA !important;
 }
 
-
 /* Header base (mismo color y altura en todas las páginas) */
 header {
   background-color: #5B8C5A;  /* verde oliva */
@@ -101,10 +100,18 @@ header {
 .header-con-logo a:hover {
   text-decoration: underline;
 }
+
+.mapa iframe {
+  width: 100%;
+  height: 400px;
+  border: 0;
+}
 /*=================================================FIN HEADER*/
+/*""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""*/
+
 
 /* MAIN =================================================== */
-/* ====== BANNER ====== */
+/* BANNER ================================================= */
 
 
 /*.banner img {
@@ -123,7 +130,7 @@ header {
   padding: 0;                        /* rellenos: 0 */
   overflow: hidden;                  /* desborbamiento: oculto*/
   background-size: cover;            /* tamaño del fondo: portada*/
-  background-position: center;       /* posiciom del fondo: centro*/
+  background-position: right;       /* posiciom del fondo: centro*/
   display: flex;                     /* mostrar: flex */
   align-items: first baseline;       /* alinear-elementos: primera linea de base*/ */
 }
@@ -232,7 +239,7 @@ header {
 
 
 
-/* ====== GRID CONTACTO ====== */
+/* GRID CONTACTO ================================================ */
 .contacto-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;   /* dos columnas */
@@ -299,9 +306,11 @@ header {
   margin: 0;
   line-height: 1.5;
 }
-/*=================================FIN GRIS INICIO===*/
+/*=================================FIN GRIS INICIO*/
+/*"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""*/
 
-/*GRID CONTACTO=================================*/
+
+/*GRID CONTACTO==================================*/
 .contacto-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;   /* dos columnas iguales */
@@ -363,7 +372,9 @@ header {
 .formulario button:hover {
   background-color: #3C3C3C;
 }
-/*==========================FIN ESTILO DEL FORMULARIO*/ ario
+/*==========================FIN ESTILO DEL FORMULARIO*/
+/*"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 
 /* Estilo del mapa */
 .mapa img {
@@ -392,7 +403,7 @@ header {
 .producto p { font-size: 0.9rem; }
 .producto:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
 
-/* --------- FORMULARIO ----------- */
+/* --------- FORMULARIO ----------- 
 .formulario {
   max-width: 600px;
   margin: 30px auto;
@@ -416,10 +427,56 @@ header {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.formulario button:hover { background-color: #3C3C3C; }
+.formulario button:hover { background-color: #3C3C3C; }*/
 /*==================================================================MAIN*/
 
+/*CARD====================================================*/
 
+
+
+
+
+/*CARRUCEL==========================================================*/
+/* Ajustes del carrusel en salado.html */
+#carouselExampleCaptions .carousel-item img {
+  height: 450px;         /* define altura fija */
+  object-fit: cover;     /* recorta sin deformar */
+  object-position: center;
+}
+
+#carouselExampleCaptions .carousel-caption {
+  background: rgba(0,0,0,0.4); /* fondo oscuro semi-transparente */
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+#carouselExampleCaptions h5 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+#carouselExampleCaptions p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #f1f1f1;
+}
+/*============================================================================*/
+
+/*TAMANO DE LOS FRANCO estilo general para img=========================================*/
+.frasco {
+  width: 200px;                             /* ancho fijo */
+  height: 400px;                            /* alto fijo */
+  object-fit: contain;                      /* mantiene proporción */
+  background-color: #ffffff;              /* fondo blanco */
+  display: block;
+  margin: 0 auto;                           /* centra la imagen en su card */
+  padding: 10px;                            /* espacio alrededor */
+  border-radius: 5px;                       /* opcional: esquinas redondeadas */
+}
+/* =========================================FIN TAMANO DE LOS FRANCO estilo general para img*/
+
+/*""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""*/
 
 /* FOOTER ====================================================================*/
 footer {
@@ -441,10 +498,10 @@ footer .logo-pie {
 footer .seguinos {
   display: flex;
   align-items: center;
-  gap: 25px;   }                      /* espacio entre texto e iconos */
+  gap: 25px;                          /* espacio entre texto e iconos */
   margin-left: auto;                  /* empuja todo a la derecha */
   margin-right: 40px;                 /*deja aire con el borde derecho*/
-}*/
+}
 
 /* Texto Seguinos */
 footer .seguinos p {
