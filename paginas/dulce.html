@@ -1,126 +1,137 @@
-<!---------------------DULCES.HTML----------------------->
+<!--DULCES----------------------->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tierra Viva - Inicio</title>
-  <!--bs-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <!--linf a hoja scss-->
+  <title>Tierra Viva | Dulces</title>
+
+  <!-- Bootstrap para la estructura y el menú hamburguesa -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Vinculación con tu estilo principal -->
   <link rel="stylesheet" href="../css/style.css">
-  <!--font-->
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!-- HEADER CON LOGO -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
-    <div class="container-fluid">
-      <!-- Logo -->
-      <a class="navbar-brand" href="../index.html">
-        <img src="../imagenes/logo-de-Tierra-Viva-verde.png" alt="Logo Tierra Viva" width="120">
-      </a>
+  <!-- ===================================================
+       HEADER: barra superior con logo + menú hamburguesa
+       =================================================== -->
+  <header class="header-con-logo">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success w-100">
+      <div class="container-fluid">
 
-      <!-- Botón hamburguesa -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTierraViva" aria-controls="navbarTierraViva" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <!-- Logo de Tierra Viva -->
+        <a class="navbar-brand" href="../index.html">
+          <img src="../imagenes/logo-de-Tierra-Viva-verde.png" alt="Logo Tierra Viva" height="60">
+        </a>
 
-      <!-- Menú colapsable -->
-      <div class="collapse navbar-collapse" id="navbarTierraViva">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="../paginas/dulce.html">Dulce</a></li>
-          <li class="nav-item"><a class="nav-link" href="../paginas/salado.html">Salado</a></li>
-          <li class="nav-item"><a class="nav-link" href="../paginas/contacto.html">Contacto</a></li>
-        </ul>
+        <!-- Botón hamburguesa para móviles -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú principal -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active" href="dulce.html">Dulces</a></li>
+            <li class="nav-item"><a class="nav-link" href="salado.html">Salados</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
-  <!-- BANNER -->
-  </main>
-      <section class="banner-principal"style="background-image: url('../imagenes/banner-dulce-frutas.png');">
-        <div class="texto-banner">
-          <h1>Sabores Dulces</h1>
-          <h2>Nuestros dulces artesanales</h2>
-          <p>Frutas frescas, recetas caseras y el sabor de lo natural en cada frasco.</p>
-        </div>
-      </section>
-   
-<!--CARD tarjeta longer--------------------------------------------------------------------->
-  <!-- CARD TARJETAS --------------------------------------------------------------------->
-    <section class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
-            <img src="../imagenes/cascaritas-de-Naranja.png" class="card-img-top frasco" alt="Cascarita de Naranja">
-            <div class="card-body">
-              <h5 class="card-title">Cascarita de Naranja</h5>
-              <p class="card-text">Nuestros sabores de naranjas seleccionadas</p>
-              <p class="card-text">$$$$$</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col">
-          <div class="card h-100">
-            <img src="../imagenes/dulce-de-leche.png" class="card-img-top frasco" alt="Dulce de Leche">
-            <div class="card-body">
-              <h5 class="card-title">Dulce de Leche</h5>
-              <p class="card-text">Sabor artesanal</p>
-              <p class="card-text">$$$$$$</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col">
-          <div class="card h-100">
-            <img src="../imagenes/frutos-rojos.png" class="card-img-top frasco" alt="Frutos Rojos">
-            <div class="card-body">
-              <h5 class="card-title">Frutos Rojo</h5>
-              <p class="card-text">Sabor natural en cada bocado</p>
-              <p class="card-text">$$$$$$</p>
-            </div>
-          </div>
-        </div>
-         
-        <div class="col">
-          <div class="card h-100">
-            <img src="../imagenes/kinotos.png" class="card-img-top frasco" alt="Kinotos">
-            <div class="card-body">
-              <h5 class="card-title">Kinotos</h5>
-              <p class="card-text">Con el sabor único, cosechados a mano</p>
-              <p class="card-text">$$$$$$$</p>
-            </div>
-          </div>
-        </div>
+    <section class="banner-general banner-dulce">
+        <h2>Dulces Artesanales Tierra Viva</h2>
     </section>
+
+  <!-- ===================================================
+       MAIN: sección de productos dulces (Cards)
+       =================================================== -->
+  <main class="container py-5">
+    <h2 class="text-center mb-4 text-success fw-bold">Dulces Artesanales Tierra Viva</h2>
+
+    <!-- Cards responsivas: 1 por fila en móvil, 3 en laptop -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+      <!-- Card 1: Cascaritas de Naranjas -->
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="../imagenes/cascaritas-de-Naranja.png" class="card-img-top frasco" alt="Cascaritas de Naranjas">
+          <div class="card-body">
+            <h5 class="card-title text-success">Cascaritas de Naranjas</h5>
+            <p class="card-text">Finas cáscaras de naranja confitadas con un toque de dulzura natural. Un clásico artesanal.</p>
+            <p>$$$$</p>
+        </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Dulce de Leche -->
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="../imagenes/dulce-de-leche.png" class="card-img-top frasco" alt="Dulce de Leche">
+          <div class="card-body">
+            <h5 class="card-title text-success">Dulce de Leche</h5>
+            <p class="card-text">Suave, cremoso y con el sabor tradicional de las recetas caseras. Puro placer argentino.</p>
+            <p>$$$$</p>
+        </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Mermelada de Kinotos -->
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="../imagenes/kinotos.png" class="card-img-top frasco" alt="Mermelada de Kinotos">
+          <div class="card-body">
+            <h5 class="card-title text-success">Mermelada de Kinotos</h5>
+            <p class="card-text">Exquisita combinación de dulzor y acidez, con trocitos naturales de kinotos.</p>
+            <p>$$$$</p>
+        </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Mermelada de Frutos Rojos -->
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="../imagenes/frutos-rojos.png" class="card-img-top frasco" alt="Mermelada de Frutos Rojos">
+          <div class="card-body">
+            <h5 class="card-title text-success">Mermelada de Frutos Rojos</h5>
+            <p class="card-text">Frambuesas, moras y arándanos, una mezcla deliciosa con aroma a campo y sabor intenso.</p>
+            <p>$$$$</p>
+        </div>
+        </div>
+      </div>
+
+    </div>
   </main>
 
-  <!-- FOOTER -->
-  <footer>
-    <!-- Logo Tierra Viva a la izquierda -->
-    <img class="logo-pie" src="../imagenes/logo-TierraViva-pie.png" alt="Logo Tierra Viva">
+  <!-- ===================================================
+       FOOTER: igual en todas las páginas (logo + redes)
+       =================================================== -->
+  <footer class="d-flex justify-content-between align-items-center p-3 bg-success text-white">
+    <img src="../imagenes/logo-TierraViva-pie.png" alt="Logo Tierra Viva" class="logo-pie">
 
-    <!-- Bloque "Seguinos en" + iconos a la derecha -->
     <div class="seguinos">
-      <p>Seguinos en:</p>
+      <p>Seguinos en</p>
       <div class="redes">
-        <a href="https://wa.me/541122771443" class="btn-whatsapp" target="_blank">
-          <img src="../imagenes/whats_app.png" alt="WhatsApp">
-        </a>
         <a href="https://www.instagram.com" target="_blank">
-          <img src="../imagenes/instagram.png" alt="Instagram">
-        </a>
-        <a href="https://www.facebook.com" target="_blank">
-          <img src="../imagenes/fb.png" alt="Facebook">
-        </a>
+            <img src="../imagenes/instagram.png" alt="Instagram">
+          </a>
+          <a href="https://www.facebook.com" target="_blank">
+            <img src="../imagenes/fb.png" alt="Facebook">
+          </a>
+          <a href="https://wa.me/541122771443" class="btn-whatsapp" target="_blank">
+            <img src="../imagenes/whats_app.png" alt="WhatsApp">
+          </a>
       </div>
     </div>
   </footer>
-<!--js bs-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap JS para menú hamburguesa -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

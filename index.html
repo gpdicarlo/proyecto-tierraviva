@@ -1,67 +1,70 @@
-<!--INDEX.HTML (sin logo en el header)----------------------------------->
+<!--INDEX-->
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tierra Viva - Inicio</title>
-  <!--bs-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <!--linf a hoja scss-->
-  <link rel="stylesheet" href="./css/style.css">
-  <!--font-->
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>Tierra Viva | Inicio</title>
+
+  <!-- Vinculación con Bootstrap para el menú hamburguesa -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Vinculación con la hoja de estilos personalizada -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-  <!-- HEADER SIN LOGO -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
-    <div class="container-fluid">
-      <!-- Botón hamburguesa -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTierraViva" aria-controls="navbarTierraViva" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <!-- Menú colapsable -->
-      <div class="collapse navbar-collapse" id="navbarTierraViva">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="../paginas/dulce.html">Dulce</a></li>
-          <li class="nav-item"><a class="nav-link" href="../paginas/salado.html">Salado</a></li>
-          <li class="nav-item"><a class="nav-link" href="../paginas/contacto.html">Contacto</a></li>
-        </ul>
+  <!-- ===================================================
+       HEADER: barra superior con menú de navegación.
+       No lleva logo (solo en las otras páginas).
+       =================================================== -->
+  <header class="header-sin-logo">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+      <div class="container-fluid">
+        <!-- Botón hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú principal -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="paginas/dulce.html">Dulces</a></li>
+            <li class="nav-item"><a class="nav-link" href="paginas/salado.html">Salados</a></li>
+            <li class="nav-item"><a class="nav-link" href="paginas/contacto.html">Contacto</a></li>
+          </ul>
+        </div>
       </div>
+    </nav>
+  </header>
+
+  <!-- ===================================================
+       MAIN: sección principal (única del index).
+       Texto de bienvenida alineado a la derecha.
+       =================================================== -->
+  <main class="container-fluid d-flex align-items-center justify-content-end vh-100 bg-light">
+    <div class="text-end pe-5">
+        <div class="col-md-6 text-center">
+            <img src="imagenes/tierraViva.png" alt="Logo Tierra Viva" class="img-fluid" style="max-width: 70%; height: auto;">
+        </div>
+        <div class="col-md-6 text-end pe-5">
+            <h1 class="display-4 fw-bold text-success">Bienvenidos a<br>Tierra Viva</h1>
+            <p class="lead text-secondary">Productos caseros elaborados con amor, tradición y los mejores ingredientes naturales.</p>
+        </div>
     </div>
-  </nav>
+</main>
 
-  <!-- CONTENEDOR PRINCIPAL EN GRID -->
-  <main>
-    <section class="contenedor1-grid">
-      <h1 class="titulo1">Bienvenidos a Tierra Viva</h1>
+  <!-- ===================================================
+       FOOTER: igual en todas las páginas.
+       Incluye logo inferior y redes sociales.
+       =================================================== -->
+  <footer class="d-flex justify-content-between align-items-center p-3 bg-success text-white">
+    <img src="imagenes/logo-TierraViva-pie.png" alt="Logo Tierra Viva" class="logo-pie">
 
-      <img class="logo-banner" src="./imagenes/tierraViva.png" alt="Logo Tierra Viva">
-
-      <h2 class="titulo2">De nuestra cocina a tu vida</h2>
-      <p class="titulo3">Mamá me enseñó la cocina desde pequeña, y gracias a ella aprendí a disfrutar de los sabores y del placer de preparar alimentos con cariño.</p>
-      <p class="titulo4">El IAG me permitió descubrir nuevas técnicas y entender mejor cómo conservar lo natural de cada ingrediente.</p>
-      <p class="titulo5">Hoy, quiero compartir con ustedes mis sabores, hechos con dedicación y con todo el amor de quien cocina desde el corazón. </p>
-      <p c lass="titulo6">Productos artesanales hechos con amor: dulces, conservas y más. Descubrí la tradición y el sabor natural en cada frasco.</p>
-      <p class="titulo7"><strong>Porque aquí no solo ofrecemos alimentos: compartimos momentos que saben a hogar.</strong></p>
-    </section>
-  </main>
-
-
-  <!-- FOOTER -->
-    <footer>
-      <!-- Logo Tierra Viva a la izquierda -->
-      <img class="logo-pie" src="./imagenes/logo-TierraViva-pie.png" alt="Logo Tierra Viva">
-      <!--<img src="./imagenes/logo-TierraViva-pie.png" alt="Logo Tierra Viva">-->
-      <!-- Bloque "Seguinos en" + iconos a la derecha -->
-      <div class="seguinos">
-        <p>Seguinos en:</p>
-        <div class="redes">
+    <div class="seguinos">
+      <p>Seguinos en</p>
+      <div class="redes">
           <a href="https://www.instagram.com" target="_blank">
             <img src="./imagenes/instagram.png" alt="Instagram">
           </a>
@@ -71,10 +74,12 @@
           <a href="https://wa.me/541122771443" class="btn-whatsapp" target="_blank">
             <img src="./imagenes/whats_app.png" alt="WhatsApp">
           </a>
-        </div>
       </div>
-    </footer>
-  <!--js bs-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
- </body>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (para la hamburguesa y otros componentes) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>

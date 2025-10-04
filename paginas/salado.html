@@ -1,155 +1,152 @@
-<!------------------------ SALADO.HTML--------------------->
+<!--SALADO-------------------->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tierra Viva - Inicio</title>
-  <!--bs-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <!--linf a hoja scss-->
+  <title>Tierra Viva | Salados</title>
+
+  <!-- Bootstrap para el carrusel y el menú hamburguesa -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
   <link rel="stylesheet" href="../css/style.css">
-  <!--font-->
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
- <!-- HEADER CON LOGO -->
-<!-- HEADER CON LOGO -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
-    <div class="container-fluid">
-      <!-- Logo -->
-      <a class="navbar-brand" href="../index.html">
-        <img src="../imagenes/logo-de-Tierra-Viva-verde.png" alt="Logo Tierra Viva" width="120">
-      </a>
+  <!-- ===================================================
+       HEADER: barra superior con logo + menú hamburguesa
+       =================================================== -->
+  <header class="header-con-logo">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success w-100">
+      <div class="container-fluid">
 
-      <!-- Botón hamburguesa -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTierraViva" aria-controls="navbarTierraViva" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <!-- Logo de Tierra Viva -->
+        <a class="navbar-brand" href="../index.html">
+          <img src="../imagenes/logo-de-Tierra-Viva-verde.png" alt="Logo Tierra Viva" height="60">
+        </a>
+
+        <!-- Botón hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú principal -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="dulce.html">Dulces</a></li>
+            <li class="nav-item"><a class="nav-link active" href="salado.html">Salados</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <section class="banner-general banner-salado">
+        <h2>Sabores Salados y Caseros</h2>
+    </section>
+
+  <!-- ===================================================
+       MAIN: carrusel de productos salados
+       =================================================== -->
+  <main class="container py-5">
+    <h2 class="text-center mb-4 text-success fw-bold">Especialidades Saladas Tierra Viva</h2>
+
+    <!-- Carrusel Bootstrap -->
+    <div id="carouselSalados" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicadores del carrusel (puntos) -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselSalados" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselSalados" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselSalados" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselSalados" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+
+      <!-- Slides del carrusel -->
+      <div class="carousel-inner">
+
+        <!-- Escabeche de Berenjenas -->
+        <div class="carousel-item active">
+          <img src="../imagenes/escabeche-Berenjenas.png" class="d-block w-100" alt="Escabeche de Berenjenas">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+            <h5>Escabeche de Berenjenas</h5>
+            <p>Tradicional y sabroso, con especias naturales y aceite de oliva.</p>
+            <p>$$$$</p>
+        </div>
+        </div>
+
+        <!-- Escabeche de Pollo -->
+        <div class="carousel-item">
+          <img src="../imagenes/escabeche-Pollo.png" class="d-block w-100" alt="Escabeche de Pollo">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+            <h5>Escabeche de Pollo</h5>
+            <p>Tiernos trozos de pollo con vegetales y un toque de vinagre artesanal.</p>
+            <p>$$$$</p>
+        </div>
+        </div>
+
+        <!-- Pepinos en Vinagre -->
+        <div class="carousel-item">
+          <img src="../imagenes/pepinos-en-vinagre.png" class="d-block w-100" alt="Pepinos en vinagre">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+            <h5>Pepinos en Vinagre</h5>
+            <p>Crujientes, frescos y con el punto justo de acidez. Perfectos para picadas.</p>
+            <p>$$$$</p>
+        </div>
+        </div>
+
+        <!-- Salsa de Tomates -->
+        <div class="carousel-item">
+          <img src="../imagenes/salsa-de-Tomates.png" class="d-block w-100" alt="Salsa de Tomates">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+            <h5>Salsa de Tomates</h5>
+            <p>Elaborada con tomates seleccionados, ideal para tus comidas caseras.</p>
+            <p>$$$$</p>
+        </div>
+        </div>
+
+      </div>
+
+      <!-- Controles de navegación -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselSalados" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselSalados" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
       </button>
 
-      <!-- Menú colapsable -->
-      <div class="collapse navbar-collapse" id="navbarTierraViva">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="../paginas/dulce.html">Dulce</a></li>
-          <li class="nav-item"><a class="nav-link" href="../paginas/salado.html">Salado</a></li>
-          <li class="nav-item"><a class="nav-link" href="../paginas/contacto.html">Contacto</a></li>
-        </ul>
-      </div>
     </div>
-  </nav>
- 
-  <!-- BANNER -->
-  <main>
-     <section class="banner-principal" style="background-image: url('../imagenes/banner-salados-verdura.png');">
-      <div class="texto-banner">
-         <h1>Sabores Salados</h1>
-         <h2>Nuestras recetas saladas</h2>
-         <p>Escabeches, salsas y conservas para acompañar tus comidas con tradición artesanal</p>
-       </div>
-     </section>
+  </main>
 
-    <!-- CARRUSEL LINEA  -->
-  <section id="carouselExampleCaptions" class="carousel slide">
-  <!-- Indicadores -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-  </div>
+  <!-- ===================================================
+       FOOTER: igual en todas las páginas
+       =================================================== -->
+  <footer class="d-flex justify-content-between align-items-center p-3 bg-success text-white">
+    <img src="../imagenes/logo-TierraViva-pie.png" alt="Logo Tierra Viva" class="logo-pie">
 
-  <!-- Slides -->
-  <div class="carousel-inner">
-    <!-- Slide 1 -->
-    <div class="carousel-item active">
-      <img src="../imagenes/escabeche-Berenjenas.png" class="d-block frasco" alt="Escabeches de Berenjenas">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Escabeches de Berenjenas</h5>
-        <p>Intenso con especias seleccionadas</p>
-        <p>$$$$$$$</p>
-      </div>
-    </div>
-
-    <!-- Slide 2 -->
-    <div class="carousel-item">
-      <img src="../imagenes/escabeche-Pollo.png" class="d-block frasco" alt="Escabeches de Pollo">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Escabeches de Pollo</h5>
-        <p>Receta lista para compartir</p>
-        <p>$$$$$$</p>
-      </div>
-    </div>
-
-    <!-- Slide 3 -->
-    <div class="carousel-item">
-      <img src="../imagenes/pepinos-en-vinagre.png" class="d-block frasco" alt="Pepinos en Vinagre">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Pepinos en Vinagre</h5>
-        <p>Sabor casero, textura crujiente</p>
-        <p>$$$$$$</p>
-      </div>
-    </div>
-
-    <!-- Slide 4 -->
-    <div class="carousel-item">
-      <img src="../imagenes/salsa-de-Tomates.png" class="d-block frasco" alt="Salsa de Tomate">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Salsa de Tomate</h5>
-        <p>Con tomates frescos de la huerta</p>
-        <p>$$$$$$$$</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Controles -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Anterior</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Siguiente</span>
-  </button>
-</section>
-
-
-  <!-- Controles -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Anterior</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Siguiente</span>
-  </button>
-</section=>
-
-
-   <!-- FOOTER -->
-  <footer>
-    <!-- Logo Tierra Viva a la izquierda -->
-    <img class="logo-pie" src="../imagenes/logo-TierraViva-pie.png" alt="Logo Tierra Viva">
-
-    <!-- Bloque "Seguinos en" + iconos a la derecha -->
     <div class="seguinos">
-      <p>Seguinos en:</p>
+      <p>Seguinos en</p>
       <div class="redes">
-        <a href="https://wa.me/541122771443" class="btn-whatsapp" target="_blank">
-          <img src="../imagenes/whats_app.png" alt="WhatsApp">
-        </a>
-        <a href="https://www.instagram.com" target="_blank">
-          <img src="../imagenes/instagram.png" alt="Instagram">
-        </a>
-        <a href="https://www.facebook.com" target="_blank">
-          <img src="../imagenes/fb.png" alt="Facebook">
-        </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="../imagenes/instagram.png" alt="Instagram">
+          </a>
+          <a href="https://www.facebook.com" target="_blank">
+            <img src="../imagenes/fb.png" alt="Facebook">
+          </a>
+          <a href="https://wa.me/541122771443" class="btn-whatsapp" target="_blank">
+            <img src="../imagenes/whats_app.png" alt="WhatsApp">
+          </a>
       </div>
     </div>
- </footer>
-<!--js bs-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </footer>
+
+  <!-- Bootstrap JS para el carrusel y la hamburguesa -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
