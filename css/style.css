@@ -8,7 +8,6 @@
    Fuente: 'Lato', sans-serif
    ========================================================= */
 
-/* [LÍNEA 15] GENERAL ====================================== */
 body {
   font-family: 'Lato', sans-serif;
   background-color: #ffffff;
@@ -17,8 +16,6 @@ body {
   padding: 0;
 }
 
-
-/* [LÍNEA 27] HEADER ======================================= */
 /* Header sin logo (solo en index.html) */
 .header-sin-logo {
   background-color: #5B8C5A;
@@ -45,9 +42,8 @@ body {
   text-decoration: underline;
 }
 
-/* [LÍNEA 55] INDEX ======================================== */
 /* Main con logo a la izquierda y texto a la derecha */
-main.container-fluid {
+/*main.container-fluid {
   background-color: #ffffff;
   background-size: cover;
   background-position: center;
@@ -62,9 +58,85 @@ main.container-fluid h1 {
 main.container-fluid p {
   font-size: 1.2rem;
   color: #3C3C3C;
+}*/
+
+/* GRID PRINCIPAL DEL MAIN================================== */
+/* ======== GRID PRINCIPAL ======== */
+.presentacion-grid {
+  display: grid;
+  grid-template-areas:
+    "titulo titulo"
+    "logo contenido";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+  gap: 20px;
+  padding: 40px;
+  align-items: center;
 }
 
-/* [LÍNEA 75] BANNERS ===================================== */
+/* ======== TÍTULO ======== 
+.titulo {
+  grid-area: titulo;
+  text-align: center;
+  font-family:  'Lato', sans-serif;
+  font-size: 3.5rem;
+  color: #5B8C5A;
+  margin-bottom: 20px;
+}*/
+
+/* ======== LOGO ======== */
+.logo {
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain; /* mantiene proporciones sin deformar */
+}
+
+/* ======== CONTENIDO ======== */
+.contenido {
+  grid-area: contenido;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.contenido p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* ======== RESPONSIVE ======== 
+@media (max-width: 768px) {
+  .presentacion-grid {
+    grid-template-areas:
+      "titulo"
+      "logo"
+      "contenido";
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .contenido p {
+    text-align: center;
+  }
+}
+
+/*=====================================================fin grid*/
+
+
 /* Estilo general para todos los banners */
 .banner-general {
   width: 100%;
@@ -76,8 +148,6 @@ main.container-fluid p {
   background-position: center left;
 }
 
-
-/* [LÍNEA 75] DULCE.HTML =================================== */
 /* Banner superior (3.5 cm ≈ 132px) */
 .banner-general {
   width: 100%;
@@ -140,7 +210,6 @@ main.container-fluid p {
   padding: 10px;
 }
 
-/* [LÍNEA 120] SALADO.HTML ================================= */
 /* Carrusel ajustado (tamaño frascos reducido) */
 .carousel-item img {
   width: 100%;
@@ -164,7 +233,6 @@ main.container-fluid p {
   font-size: 1.1rem;
 }
 
-/* [LÍNEA 150] CONTACTO.HTML =============================== */
 .formulario {
   border: 2px solid #5B8C5A;
   background-color: #fff;
@@ -194,7 +262,7 @@ footer {
 }
 
 footer img.logo-pie {
-  height: 60px;
+  height: 120px;
 }
 
 footer .seguinos {
@@ -211,7 +279,6 @@ footer .redes img:hover {
   transform: scale(1.1);
 }
 
-/* [LÍNEA 200] RESPONSIVE ================================= */
 /* Tablets */
 @media (max-width: 992px) {
   .navbar-nav {
@@ -265,5 +332,3 @@ footer .redes img:hover {
   }
 }
 
-/* [LÍNEA 240] GIT & GITHUB =============================== */
-/* Referencia interna, no afecta al diseño */
