@@ -10,10 +10,25 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color: #ffffff;
+  background-color: #faf3f3;
   color: #3C3C3C;
   margin: 0;
   padding: 0;
+}
+
+/*========header fijo en todas las páginas========*/
+header {
+  position: fixed;        /* Fija el header en la parte superior */
+  top: 0;                 /* Lo coloca al borde superior */
+  left: 0;
+  width: 100%;            /* Que ocupe todo el ancho */
+  z-index: 1000;          /* Se asegura de que quede encima del resto */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* sombra suave debajo */
+}
+
+/* Para evitar que el contenido quede tapado por el header */
+main {
+  margin-top: 100px;      /* Ajustá el valor según la altura de tu navbar */
 }
 
 /* Header sin logo (solo en index.html) */
