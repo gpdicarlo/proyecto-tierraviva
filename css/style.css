@@ -28,7 +28,7 @@ header {
 
 /* Para evitar que el contenido quede tapado por el header */
 main {
-  margin-top: 100px;      /* Ajustá el valor según la altura de tu navbar */
+  margin-top: 150px;      /* Ajustá el valor según la altura de tu navbar */
 }
 
 /* Header sin logo (solo en index.html) */
@@ -155,7 +155,7 @@ main.container-fluid p {
 /* Estilo general para todos los banners */
 .banner-general {
   width: 100%;
-  height: 132px; /* 3,5 cm */
+  height: 250px; /*???? */
   display: flex;
   align-items: center;
   padding-left: 50px;
@@ -166,7 +166,7 @@ main.container-fluid p {
 /* Banner superior (3.5 cm ≈ 132px) */
 .banner-general {
   width: 100%;
-  height: 132px; /* 3,5 cm */
+  height: 250px; /* ?????*/
   display: flex;
   align-items: center;
   padding-left: 50px;
