@@ -1,0 +1,246 @@
+@charset "UTF-8";
+/*==========SCSS====================*/
+/* =========================================================
+   TIERRA VIVA - main.scss
+   Paleta y estilo base con variables Sass
+   ========================================================= */
+/* 🎨 VARIABLES */
+/* ================== BODY ================== */
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #faf3f3;
+  color: #3C3C3C;
+  margin: 0;
+  padding: 0;
+}
+
+/* ================== HEADER FIJO ================== */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+header.header-sin-logo, header.header-con-logo {
+  background-color: #5B8C5A;
+}
+
+main {
+  margin-top: 100px;
+}
+
+/* ================== NAV ================== */
+.navbar-brand img {
+  height: 60px;
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+  color: #F6D58E !important;
+  text-decoration: underline;
+}
+
+/* ================== GRID PRINCIPAL ================== */
+.presentacion-grid {
+  display: grid;
+  grid-template-areas: "titulo titulo" "logo contenido";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+  gap: 20px;
+  padding: 40px;
+  align-items: center;
+}
+
+.logo {
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+}
+
+.contenido {
+  grid-area: contenido;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+.contenido p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  color: #3C3C3C;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* ================== BANNERS ================== */
+.banner-general {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  background-size: cover;
+  background-position: center left;
+}
+.banner-general h2 {
+  color: white;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+.banner-general.banner-dulce {
+  background-image: url("../imagenes/banner-dulce-frutas.png");
+}
+.banner-general.banner-salado {
+  background-image: url("../imagenes/banner-salados-verdura.png");
+}
+.banner-general.banner-contacto {
+  background-image: url("../imagenes/banner-arcoiris.png");
+}
+
+/* ================== CARDS ================== */
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.card .card-title {
+  color: #5B8C5A;
+  font-weight: bold;
+}
+.card .card-text {
+  color: #3C3C3C;
+}
+
+.frasco {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* ================== CARRUSEL ================== */
+.carousel-item img {
+  width: 100%;
+  max-height: 450px;
+  object-fit: contain;
+}
+
+.carousel-caption {
+  background-color: rgba(91, 140, 90, 0.6);
+  border-radius: 10px;
+}
+.carousel-caption h5 {
+  color: #F6D58E;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px black;
+}
+.carousel-caption p {
+  color: white;
+  font-size: 1.1rem;
+}
+
+/* ================== FORMULARIO ================== */
+.formulario {
+  border: 2px solid #5B8C5A;
+  background-color: white;
+}
+.formulario label {
+  color: #3C3C3C;
+}
+.formulario .btn-success {
+  background-color: #5B8C5A;
+  border: none;
+}
+.formulario .btn-success:hover {
+  background-color: rgb(70.8217391304, 108.9565217391, 70.0434782609);
+}
+
+.mapa iframe {
+  border-radius: 10px;
+}
+
+/* ================== FOOTER ================== */
+footer {
+  background-color: #5B8C5A;
+  color: white;
+}
+footer img.logo-pie {
+  height: 120px;
+}
+footer .seguinos {
+  text-align: right;
+}
+footer .redes img {
+  width: 30px;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+footer .redes img:hover {
+  transform: scale(1.1);
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 992px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  main.container-fluid h1 {
+    font-size: 2.5rem;
+  }
+  .frasco {
+    height: 250px;
+  }
+  .carousel-item img {
+    max-height: 350px;
+  }
+}
+@media (max-width: 576px) {
+  main.container-fluid {
+    justify-content: center !important;
+    text-align: center;
+  }
+  main.container-fluid h1 {
+    font-size: 2rem;
+  }
+  main.container-fluid p {
+    font-size: 1rem;
+  }
+  .carousel-item img {
+    max-height: 250px;
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .seguinos {
+    text-align: center;
+  }
+  footer .redes img {
+    width: 25px;
+    margin: 5px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
