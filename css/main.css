@@ -103,13 +103,13 @@ main {
   font-weight: 700;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
-.banner-general.banner-dulce {
+.banner-general.banner-dulce-frutas {
   background-image: url("../imagenes/banner-dulce-frutas.png");
 }
-.banner-general.banner-salado {
+.banner-general.banner-salados-verdura {
   background-image: url("../imagenes/banner-salados-verdura.png");
 }
-.banner-general.banner-contacto {
+.banner-general.banner-arcoiris {
   background-image: url("../imagenes/banner-arcoiris.png");
 }
 
