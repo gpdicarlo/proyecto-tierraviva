@@ -1,4 +1,4 @@
-<!--STYLE--------------->
+
 /* =========================================================
    TIERRA VIVA - VARIABLES
    Paleta de colores:
@@ -310,8 +310,8 @@ footer .redes img:hover {
 
   .carousel-item img {
     max-height: 350px; /* ✅ más chico en tablet */
-  }
-}
+  
+
 
 /* Móviles *
 @media (max-width: 576px) {
