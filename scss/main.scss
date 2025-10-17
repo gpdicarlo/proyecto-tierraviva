@@ -1,9 +1,8 @@
-/*==========SCSS====================*/
-
 /* =========================================================
    TIERRA VIVA - main.scss
-   Paleta y estilo base con variables Sass
+   Paleta, estilo base y estructura general
    ========================================================= */
+
 @use "sass:color";
 
 /* 🎨 VARIABLES */
@@ -29,16 +28,17 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
+  background-color: $verde;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-
-  &.header-sin-logo,
-  &.header-con-logo {
-    background-color: $verde;
-  }
 }
 
+/* Deja espacio para el header fijo */
 main {
   margin-top: 100px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 /* ================== NAV ================== */
@@ -97,9 +97,7 @@ main {
   padding: 20px;
 
   p {
-    font-family: $fuente;
     font-size: 1.2rem;
-    color: $gris-oscuro;
     line-height: 1.5;
     text-align: justify;
   }
@@ -111,9 +109,11 @@ main {
   height: 250px;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   padding-left: 50px;
   background-size: cover;
   background-position: center left;
+ 
 
   h2 {
     color: white;
@@ -122,9 +122,15 @@ main {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
   }
 
-  &.banner-dulce-frutas { background-image: url('../imagenes/banner-dulce-frutas.png'); }
-  &.banner-salados-verdura { background-image: url('../imagenes/banner-salados-verdura.png'); }
-  &.banner-arcoiris { background-image: url('../imagenes/banner-arcoiris.png'); }
+  &.banner-dulce {
+    background-image: url('../imagenes/banner-dulce-frutas.png');
+  }
+  &.banner-salado {
+    background-image: url('../imagenes/banner-salados-verdura.png');
+  }
+  &.banner-contacto {
+    background-image: url('../imagenes/banner-arcoiris.png');
+  }
 }
 
 /* ================== CARDS ================== */
@@ -184,6 +190,8 @@ main {
 .formulario {
   border: 2px solid $verde;
   background-color: white;
+  border-radius: 10px;
+  padding: 20px;
 
   label {
     color: $gris-oscuro;
@@ -199,8 +207,6 @@ main {
   }
 }
 
-
-
 .mapa iframe {
   border-radius: 10px;
 }
@@ -209,6 +215,7 @@ main {
 footer {
   background-color: $verde;
   color: white;
+  padding: 20px;
 
   img.logo-pie {
     height: 120px;
