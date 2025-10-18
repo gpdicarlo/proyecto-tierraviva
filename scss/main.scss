@@ -211,30 +211,80 @@ main {
   border-radius: 10px;
 }
 
+/* ===== BOTÓN FLOTANTE DE WHATSAPP ===== */
+.btn-whatsapp {
+  position: fixed;
+  bottom: 20px;      /* distancia desde abajo */
+  right: 20px;       /* distancia desde la derecha */
+  width: 40px;       /* tamaño reducido */
+  height: 40px;
+  z-index: 1000;     /* que quede siempre arriba */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  }
+
+  &:hover {
+    transform: scale(1.15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+} 
 /* ================== FOOTER ================== */
 footer {
   background-color: $verde;
   color: white;
-  padding: 20px;
+  text-align: center;
+  padding: 25px;
 
-  img.logo-pie {
-    height: 120px;
+  p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+  }
+  
+  .logo-pie {
+    height: 100px;
+    margin-bottom: 10px;
   }
 
-  .seguinos {
-    text-align: right;
-  }
+  .redes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
 
-  .redes img {
-    width: 30px;
-    margin-left: 10px;
-    transition: transform 0.3s ease;
+    img {
+      width: 32px;
+      transition: transform 0.3s ease;
 
-    &:hover {
-      transform: scale(1.1);
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
 }
+
+/*BOTON FLOTARNE*/
+.btn-whatsapp {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+
+  img {
+    width: 55px;
+   
+
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
+}
+
+
 
 /* ================== RESPONSIVE ================== */
 @media (max-width: 992px) {
@@ -285,5 +335,99 @@ footer {
       width: 25px;
       margin: 5px;
     }
+  }
+}
+/* ================== EFECTO PING PONG (rebote) ================== */
+@keyframes rebote {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Aplicar a los frascos */
+.frasco-pingpong {
+  display: inline-block;
+  animation: rebote 1.2s ease-in-out infinite;
+}
+
+/* ROTAR NORMAL 
+.anim-rotar {
+  transition: transform 0.3s cubic-bezier(.68,-0.55,.27,1.55);  çun poquito más lento 
+  transform-origin: center bottom;  pivote en la base del frasco 
+  
+  &:hover
+    transform: rotate(20deg) scale(1.1);  giro notorio: 15 grados 
+  }
+}*/
+
+/* ESCALAR FUERTE (solo para frascos salados) */
+.frasco-salado {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform-origin: center;
+
+  &:hover {
+    transform: scale(1.2);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/*SESGAR EN TEXTO (para títulos del banner) */
+.texto-sesgado {
+  display: inline-block; /* importante: permite transformar texto */
+  transition: transform 0.4s ease;
+  
+  &:hover {
+    transform: skewX(-10deg) scale(1.05);
+    letter-spacing: 1px; /* separa un poco las letras */
+  }
+}
+
+@keyframes flotar-lento {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-15px); } /* antes era -8px */
+  100% { transform: translateY(0); }
+}
+
+.logo-sesgado {
+  display: inline-block;
+  animation: 
+    entrada-sesgada 1.2s ease-out both, 
+    flotar-lento 4s ease-in-out infinite;
+}
+
+/*EFECTO DE FLOTAR SUAVE PARA EL LOGO */
+@keyframes flotar-lento {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+/*CLASE APLICADA AL LOGO */
+.logo-sesgado {
+  display: inline-block;
+  animation: 
+    entrada-sesgada 1.2s ease-out both, 
+    flotar-lento 4s ease-in-out infinite;
+}
+
+/*ANIMACIÓN DE SALUDO EN EL LOGO DEL PIE */
+@keyframes saludo-footer {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  20% { transform: rotate(-10deg) scale(1.1); }
+  40% { transform: rotate(10deg) scale(1.1); }
+  60% { transform: rotate(-6deg) scale(1.05); }
+  80% { transform: rotate(6deg) scale(1.05); }
+}
+
+.logo-pie {
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    animation: saludo-footer 1.5s ease-in-out;
   }
 }

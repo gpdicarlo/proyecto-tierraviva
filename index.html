@@ -12,7 +12,7 @@
   <!-- Vinculación con la hoja de estilos personalizada -->
   <!-- vinculacion con style>
    <link rel="stylesheet" href="css/style.css"> este es el nuevo-->
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -47,12 +47,10 @@
        Texto de bienvenida alineado a la derecha.
     =================================================== -->
 <main class="presentacion-grid">
-  <!-- Título centrado --
-    <h1 class="titulo">Tierra Viva</h1>-->
-
+  
   <!-- Logo a la izquierda -->
     <div class="logo">
-      <img src="./imagenes/tierraViva.png" alt="Logo Tierra Viva">
+      <img src="./imagenes/tierraViva.png" alt="Logo Tierra Viva" class="logo-sesgado">
     </div>
 
   <!-- Contenido a la derecha -->
@@ -67,28 +65,20 @@
   </div>
 </main>
 
+ 
+
   <!-- ===================================================
        FOOTER: igual en todas las páginas.
        Incluye logo inferior y redes sociales.
        =================================================== -->
   <footer class="d-flex justify-content-between align-items-center p-3 bg-success text-white">
     <img src="./imagenes/logo-TierraViva-pie.png" alt="Logo Tierra Viva" class="logo-pie">
-
-    <div class="seguinos">
-      <p>Seguinos en</p>
-      <div class="redes">
-          <a href="https://www.instagram.com" target="_blank">
-            <img src="./imagenes/instagram.png" alt="Instagram">
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <img src="./imagenes/fb.png" alt="Facebook">
-          </a>
-          <a href="https://wa.me/541122771443" class="btn-whatsapp" target="_blank">
-            <img src="./imagenes/whats_app.png" alt="WhatsApp">
-          </a>
-      </div>
-    </div>
   </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/541122771443" class="btn-whatsapp" target="_blank">
+    <img src="./imagenes/whats_app.png" alt="WhatsApp">
+  </a>
 
   <!-- Bootstrap JS (para la hamburguesa y otros componentes) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
