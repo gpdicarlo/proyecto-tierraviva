@@ -272,22 +272,6 @@ footer {
       }
     }
   }
-
-  // Botón de WhatsApp a la derecha
-  .btn-whatsapp {
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-
-    img {
-      width: 45px;
-      transition: transform 0.2s ease;
-
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
-  }
 }
 
 /*BOTON FLOTARNE*/
