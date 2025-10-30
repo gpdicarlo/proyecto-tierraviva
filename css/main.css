@@ -38,6 +38,10 @@ main {
   height: 60px;
 }
 
+.navbar {
+  background-color: #5B8C5A;
+}
+
 .navbar-nav .nav-link {
   color: #fff !important;
   font-weight: 600;
@@ -98,7 +102,7 @@ main {
   background-size: cover;
   background-position: center left;
 }
-.banner-general h2 {
+.banner-general h1 {
   color: white;
   font-size: 2.2rem;
   font-weight: 700;
@@ -152,7 +156,7 @@ main {
   background-color: rgba(91, 140, 90, 0.6);
   border-radius: 10px;
 }
-.carousel-caption h5 {
+.carousel-caption h3 {
   color: #F6D58E;
   font-weight: bold;
   text-shadow: 1px 1px 3px black;
@@ -207,6 +211,7 @@ main {
 
 /* ================== FOOTER ================== */
 footer {
+  position: relative;
   background-color: #5B8C5A;
   color: white;
   text-align: center;
@@ -224,13 +229,26 @@ footer .redes {
   display: flex;
   justify-content: center;
   gap: 25px;
+  margin-bottom: 15px;
 }
-footer .redes img {
+footer .redes a img {
   width: 32px;
   transition: transform 0.3s ease;
 }
-footer .redes img:hover {
+footer .redes a img:hover {
   transform: scale(1.2);
+}
+footer .btn-whatsapp {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+footer .btn-whatsapp img {
+  width: 45px;
+  transition: transform 0.2s ease;
+}
+footer .btn-whatsapp img:hover {
+  transform: scale(1.1);
 }
 
 /*BOTON FLOTARNE*/
@@ -244,10 +262,6 @@ footer .redes img:hover {
 .btn-whatsapp img {
   width: 55px;
 }
-.btn-whatsapp img:hover {
-  transform: scale(1.15);
-}
-
 /* ================== RESPONSIVE ================== */
 @media (max-width: 992px) {
   .navbar-nav {

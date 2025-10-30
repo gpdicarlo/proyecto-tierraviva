@@ -4,8 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
   <title>Tierra Viva | Salados</title>
+
+     <!--Estrategia para posicionar-->
+  <meta name="description" content="Tierra Viva, cada frasco encierra el equilibrio justo entre sabor, textura y tiempo.
+Hechos a mano, con ingredientes nobles y el amor por lo casero.   ">
+  <meta name="keywords" content="escabeches caseros, conservas naturales, salsa de tomate artesanal, pepinos en vinagre, berenjenas en escabeche, productos del campo, cocina artesanal, sabor auténtico, recetas tradicionales, hecho a mano">
+
 
   <!-- Bootstrap para el carrusel y el menú hamburguesa -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -51,7 +56,7 @@
        BANNER: banner superior con fondo de verdura
        =================================================== -->
     <section class="banner-general banner-salado">
-        <h2 class="texto-sesgado">Sabores Salados</h2>
+        <h1 class="texto-sesgado">Sabores Salados</h1>
     </section>
 
   <!-- ===================================================
@@ -60,7 +65,7 @@
   <!--<main class="container py-5">
     <h2 class="text-center mb-4 text-success fw-bold">Lo salado, como debe ser</h2>-->
    <main class="container-fluid text-center mt-4">
-    <h3>Lo salado, como debe ser</h3>
+    <h2>Lo salado, como debe ser</h2>
     
     <!-- Carrusel Bootstrap -->
     <div id="carouselSalados" class="carousel slide" data-bs-ride="carousel">
@@ -80,8 +85,8 @@
         <div class="carousel-item active">
           <img src="../imagenes/escabeche-Berenjenas.png" class="frasco frasco-salado" alt="Escabeche de Berenjenas">
           <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
-            <h5>Escabeche de Berenjenas</h5>
             <p>Tradicional y sabroso, con especias naturales y aceite natural.</p>
+            <h3>Escabeche de Berenjenas</h3>
             <p>$3.500,00</p>
         </div>
         </div>
@@ -90,7 +95,7 @@
         <div class="carousel-item">
           <img src="../imagenes/escabeche-Pollo.png" class="frasco frasco-salado" alt="Escabeche de Pollo">
           <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
-            <h5>Escabeche de Pollo</h5>
+            <h3>Escabeche de Pollo</h3>
             <p>Tiernos trozos de pollo con vegetales y un toque de vinagre artesanal.</p>
             <p>$3.500,00</p>
         </div>
@@ -100,7 +105,7 @@
         <div class="carousel-item">
           <img src="../imagenes/pepinos-en-vinagre.png" class="frasco frasco-salado" alt="Pepinos en vinagre">
           <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
-            <h5>Pepinos en Vinagre</h5>
+            <h3>Pepinos en Vinagre</h3>
             <p>Crujientes, frescos y con el punto justo de acidez. Perfectos para picadas.</p>
             <p>$3.800,00$</p>
         </div>
@@ -110,7 +115,7 @@
         <div class="carousel-item">
           <img src="../imagenes/salsa-de-Tomates.png" class="frasco frasco-salado" alt="Salsa de Tomates">
           <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
-            <h5>Salsa de Tomates</h5>
+            <h3>Salsa de Tomates</h3>
             <p>Elaborada con tomates seleccionados, ideal para tus comidas caseras.</p>
             <p>$3.800,00</p>
         </div>
@@ -132,16 +137,33 @@
   </main>
 
   <!-- ===================================================
-       FOOTER: igual en todas las páginas
+       FOOTER: igual en todas las páginas.
+       Incluye logo inferior y redes sociales.
        =================================================== -->
-  <footer class="d-flex justify-content-between align-items-center p-3 bg-success text-white">
-    <img src="../imagenes/logo-TierraViva-pie.png" alt="Logo Tierra Viva" class="logo-pie">
-  </footer>
+ <footer>
+  <img src="../imagenes/logo-TierraViva-pie.png" alt="Logo Tierra Viva" class="logo-pie">
 
-  <!-- Botón flotante de WhatsApp -->
+  <p>Seguinos en nuestras redes</p>
+
+  <div class="redes">
+    <a href="https://www.facebook.com/TierraViva" target="_blank">
+      <img src="../imagenes/fb.png" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/TierraViva" target="_blank">
+      <img src="../imagenes/instagram.png" alt="Instagram">
+    </a>
+    <a href="https://www.pinterest.com/TierraViva" target="_blank">
+      <img src="../imagenes/pinterest.png" alt="Pinterest">
+    </a>
+  </div>
+
+  <p>© 2025 Tierra Viva | Precios justos para que todos ganemos 🌿</p>
+
+  <!-- WhatsApp flotante -->
   <a href="https://wa.me/541122771443" class="btn-whatsapp" target="_blank">
     <img src="../imagenes/whats_app.png" alt="WhatsApp">
   </a>
+</footer>
 
   <!-- Bootstrap JS para el carrusel y la hamburguesa -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

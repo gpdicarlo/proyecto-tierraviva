@@ -6,7 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tierra Viva | Dulces</title>
 
-  <!-- Bootstrap para la estructura y el menú hamburguesa -->
+     <!--Estrategia para posicionar-->
+    <meta name="description" content="Tierra Viva, con frutas frescas seleccionadas y cocidas lentamente para conservar todo su aroma y color.">
+    <meta name="keywords" content="mermeladas artesanales, dulces caseros, frutas naturales, conserva artesanal, sabor del campo, hecho a mano, mermelada de frutilla, mermelada de naranja, productos naturales, dulzura artesanal">
+ 
+    <!-- Bootstrap para la estructura y el menú hamburguesa -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Estilo principal 
@@ -51,7 +55,7 @@
        BANNER: banner superior con fondo de frutas
        =================================================== -->
     <section class="banner-general banner-dulce">
-        <h2 class="texto-sesgado">Dulces Artesanales</h2>
+        <h1 class="texto-sesgado">Dulces Artesanales</h1>
     </section>
 
   <!-- ===================================================
@@ -63,7 +67,7 @@
    *** Cards responsivas: 1 por fila en móvil, 3 en laptop -->
    
   <main class="container-fluid text-center mt-4">
-       <h3>El sabor dulce de lo hecho a mano</h3>
+       <h2>El sabor dulce de lo hecho a mano</h2>
 
 <!-- ===================================================
      GRID CARD
@@ -75,7 +79,7 @@
         <div class="card">
         <img src="../imagenes/cascaritas-de-Naranja.png" class="frasco anim-rotar" alt="Cascaritas de Naranja">
         <div class="card-body">
-            <h5 class="card-title">Cascaritas de Naranja</h5>
+            <h3 class="card-title">Cascaritas de Naranja</h3>
             <p class="card-text">Finas cáscaras de naranjas confitadas con un toque de dulzura natural</p>
             <p>Un clásico artesanal</p>
             <p>2.100,00 $</p>
@@ -88,7 +92,7 @@
         <div class="card">
         <img src="../imagenes/dulce-de-leche.png" class="frasco anim-rotar" alt="Dulce de Leche">
         <div class="card-body">
-            <h5 class="card-title">Dulce de Leche</h5>
+            <h3 class="card-title">Dulce de Leche</h3>
             <p class="card-text">Suave, cremose y con el sabor tradicional de las recetas caseras</p>
             <p>Puro placer argentino</p>
             <p>1.800,00 $</p>
@@ -101,7 +105,7 @@
         <div class="card">
         <img src="../imagenes/frutos-rojos.png" class="frasco anim-rotar" alt="Frutos Rojo">
         <div class="card-body">
-            <h5 class="card-title">Frutos Rojos</h5>
+            <h3 class="card-title">Frutos Rojos</h3>
             <p class="card-text">Frambuesas, moras y arándanos</p>
             <p>Una mezcla deliciosa con aroma a campo y sabor intenso</p>
             <p>2.300,00 $</p>
@@ -114,7 +118,7 @@
         <div class="card">
         <img src="../imagenes/kinotos.png" class="frasco anim-rotar" alt="Mermelada de Kinotos">
         <div class="card-body">
-            <h5 class="card-title">Mermelada de Kinotos</h5>
+            <h3 class="card-title">Mermelada de Kinotos</h3>
             <p class="card-text">Exquisita combinación de dulzura y acidez</p>
             <p>Con trocitos naturales de kinotos</p>
             <p>2.300,00 $</p>
@@ -125,16 +129,33 @@
   </main>
 
   <!-- ===================================================
-       FOOTER: igual en todas las páginas
+       FOOTER: igual en todas las páginas.
+       Incluye logo inferior y redes sociales.
        =================================================== -->
-  <footer class="d-flex justify-content-between align-items-center p-3 bg-success text-white">
-    <img src="../imagenes/logo-TierraViva-pie.png" alt="Logo Tierra Viva" class="logo-pie">
-  </footer>
+ <footer>
+  <img src="../imagenes/logo-TierraViva-pie.png" alt="Logo Tierra Viva" class="logo-pie">
 
-  <!-- Botón flotante de WhatsApp -->
+  <p>Seguinos en nuestras redes</p>
+
+  <div class="redes">
+    <a href="https://www.facebook.com/TierraViva" target="_blank">
+      <img src="../imagenes/fb.png" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/TierraViva" target="_blank">
+      <img src="../imagenes/instagram.png" alt="Instagram">
+    </a>
+    <a href="https://www.pinterest.com/TierraViva" target="_blank">
+      <img src="../imagenes/pinterest.png" alt="Pinterest">
+    </a>
+  </div>
+
+  <p>© 2025 Tierra Viva | Precios justos para que todos ganemos 🌿</p>
+
+  <!-- WhatsApp flotante -->
   <a href="https://wa.me/541122771443" class="btn-whatsapp" target="_blank">
     <img src="../imagenes/whats_app.png" alt="WhatsApp">
   </a>
+</footer>
 
   <!-- Bootstrap JS para menú hamburguesa -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
